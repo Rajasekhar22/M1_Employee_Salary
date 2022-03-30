@@ -1,0 +1,13 @@
+double x;
+double y;
+double z;
+char name_Of_Company[50];
+char name_Of_Employee[30];
+long long int mob_No;
+int no_Of_Employees ;
+double basic_Salary_Emp;
+double gross_Pay;
+int no_Of_Days_Worked;
+double no_Of_hours_OT_Worked;
+double allowance;
+int opt,option,button;
