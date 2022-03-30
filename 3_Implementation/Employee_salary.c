@@ -76,7 +76,7 @@ void reg()
 {
   FILE *fp;
   char c,checker[30];
-  int y=0;
+  int y1=0;
   if(fp == NULL){
     fp=fopen("Reg.txt", "w");
     goto a;
@@ -110,7 +110,7 @@ void reg()
     printf("\n\n\t\t\t\t  PASSWORD: ");
     while((c=getch())!=13)
     {
-      w.pass[y++]=c;
+      w.pass[y1++]=c;
       printf("%c",'*');
     }
     fprintf(fp,"\t%s %s\n", w.name, w.pass);
@@ -129,7 +129,7 @@ void reg()
 void login()
 {
   FILE *fp;
-  char c,name[30],pass[30]; int z=0;
+  char c,name[30],pass[30]; int z1=0;
   int checku,checkp;
 
   fp=fopen("Reg.txt", "r+");
@@ -154,10 +154,10 @@ void login()
         printf("\n\n\t\t\t\t  ENTER PASSWORD: ");
         while((c=getch())!=13)
         {
-          pass[z++]=c;
+          pass[z1++]=c;
           printf("%c",'*');
         }
-          pass[z]='\0';
+          pass[z1]='\0';
           checkp=strcmp(w.pass,pass);
           break;
         }
