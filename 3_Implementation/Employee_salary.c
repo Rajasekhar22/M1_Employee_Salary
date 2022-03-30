@@ -18,9 +18,12 @@ int main(){
   switch (opt){
     case 1:
       login();
+      call();
       break;
     case 2:
       login();
+      reg();
+      call();
       break;
     default :
       printf("Wrong option entered!");
@@ -142,8 +145,7 @@ void login(){
   if(checku==0&&checkp==0){
     printf("\n\n\n\t\t\t\tYOU HAVE LOGGED IN SUCCESSFULLY!!");
     printf("\n\n\n\t\t\t\tWELCOME, HAVE A NICE DAY");
-    //reg();
-    call();
+    
   }
   else if(checku==0&&checkp!=0){
     printf("\n\n\n\t\t\tWRONG PASSWORD!! Not %s \n\n\t\t\tTry logging in again!\n",name);
