@@ -73,36 +73,36 @@ double pf_Calc(double basic_Salary_Emp){
 }
 
 void reg()
+{
+  FILE *fp;
+  char c,checker[30];
+  static int z=0;
+  if(fp == NULL){
+    fp=fopen("Reg.txt", "w");
+    goto a;
+  }
+  else{
+    fp=fopen("Reg.txt", "a");
+    goto a;
+  }
+  a:
+  printf("\n\t\t\t\t-----------------------------");
+  printf("\n\n\t\t\t\t    REGISTERATION");
+  printf("\n\t\t\t\t-----------------------------");
+  for(i=0;i<100;i++)
   {
-    FILE *fp;
-    char c,checker[30];
-    static int z=0;
-    if(fp == NULL){
-      fp=fopen("Reg.txt", "w");
-      goto a;
-    }
-    else{
-      fp=fopen("Reg.txt", "a");
-      goto a;
-    }
-    a:
-    printf("\n\t\t\t\t-----------------------------");
-    printf("\n\n\t\t\t\t    REGISTERATION");
-    printf("\n\t\t\t\t-----------------------------");
-    for(i=0;i<100;i++)
+    printf("\n\n\t\t\t\t  ENTER USERNAME: ");
+    scanf("%s",checker);
+    while(!feof(fp))
     {
-      printf("\n\n\t\t\t\t  ENTER USERNAME: ");
-      scanf("%s",checker);
-      while(!feof(fp))
+      printf("");
+      if(strcmp(checker,w.name)==0)
       {
-        printf("");
-        if(strcmp(checker,w.name)==0)
-        {
-          printf("\n\n\t\t\tYOU'RE ALREADY A USER");
-          reg();
-        }
-        else
-        {
+        printf("\n\n\t\t\tYOU'RE ALREADY A USER");
+        reg();
+      }
+      else
+      {
         strcpy(w.name,checker);
         break;
       }
@@ -118,8 +118,8 @@ void reg()
     printf("\n\n\tPress enter if you agree with Username and Password");
     if((c=getch())==13)
     {
-    printf("\n\n\t\tYou are successfully registered");
-    login();
+      printf("\n\n\t\tYou are successfully registered");
+      login();
     }
    break;
   }
