@@ -142,7 +142,7 @@ void login(){
   if(checku==0&&checkp==0){
     printf("\n\n\n\t\t\t\tYOU HAVE LOGGED IN SUCCESSFULLY!!");
     printf("\n\n\n\t\t\t\tWELCOME, HAVE A NICE DAY");
-    reg();
+    //reg();
     call();
   }
   else if(checku==0&&checkp!=0){
