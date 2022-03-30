@@ -76,7 +76,7 @@ void reg()
 {
   FILE *fp;
   char c,checker[30];
-  int z=0;
+  int y=0;
   if(fp == NULL){
     fp=fopen("Reg.txt", "w");
     goto a;
@@ -110,7 +110,7 @@ void reg()
     printf("\n\n\t\t\t\t  PASSWORD: ");
     while((c=getch())!=13)
     {
-      w.pass[z++]=c;
+      w.pass[y++]=c;
       printf("%c",'*');
     }
     fprintf(fp,"\t%s %s\n", w.name, w.pass);
