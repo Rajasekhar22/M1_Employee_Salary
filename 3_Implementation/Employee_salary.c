@@ -23,7 +23,6 @@ int main(){
       break;
     case 2:
       login();
-      reg();
       break;
     default :
       printf("Wrong option entered!");
@@ -72,8 +71,7 @@ double pf_Calc(double basic_Salary_Emp){
   return pf;
 }
 
-void reg()
-{
+void reg(){
   FILE *fp;
   char c,checker[30];
   int y1=0;
@@ -89,27 +87,21 @@ void reg()
   printf("\n\t\t\t\t-----------------------------");
   printf("\n\n\t\t\t\t    REGISTERATION");
   printf("\n\t\t\t\t-----------------------------");
-  for(i=0;i<100;i++)
-  {
+  for(i=0;i<100;i++){
     printf("\n\n\t\t\t\t  ENTER USERNAME: ");
     scanf("%s",checker);
-    while(!feof(fp))
-    {
-      printf("");
-      if(strcmp(checker,w.name)==0)
-      {
+    while(!feof(fp)){
+      if(strcmp(checker,w.name)==0){
         printf("\n\n\t\t\tYOU'RE ALREADY A USER");
         reg();
       }
-      else
-      {
+      else{
         strcpy(w.name,checker);
         break;
       }
     }
     printf("\n\n\t\t\t\t  PASSWORD: ");
-    while((c=getch())!=13)
-    {
+    while((c=getch())!=13){
       w.pass[y1++]=c;
       printf("%c",'*');
     }
@@ -119,34 +111,28 @@ void reg()
   }
 }
 
-void login()
-{
+void login(){
   FILE *fp;
   char c,name[30],pass[30]; int z1=0;
   int checku,checkp;
 
   fp=fopen("Reg.txt", "r+");
-  if(fp == NULL)
-  {
+  if(fp == NULL){
     printf("\t\t\tfile does not found !");
     exit(1);
   }
-  else
-  {
+  else{
     printf("\n\n\t\t\t\t   LOG IN ZONE");
     printf("\n\t\t\t\t^^^^^^^^^^^^^^^^^^^^^^");
     printf("\n\n\t\t\t\t  ENTER USERNAME: ");
     scanf("%s",name);
-    while( (c = fgetc(fp)) != EOF)
-    {
+    while( (c = fgetc(fp)) != EOF){
       fscanf(fp,"%s %s",w.name,w.pass);
-      if(strcmp(w.name, name) == 0)
-      {
+      if(strcmp(w.name, name) == 0){
         checku=0;
         xy:
         printf("\n\n\t\t\t\t  ENTER PASSWORD: ");
-        while((c=getch())!=13)
-        {
+        while((c=getch())!=13){
           pass[z1++]=c;
           printf("%c",'*');
         }
@@ -156,15 +142,14 @@ void login()
         }
       }
   }
-  if(checku==0&&checkp==0)
-  {
+  if(checku==0&&checkp==0){
     printf("\n\n\n\t\t\t\tYOU HAVE LOGGED IN SUCCESSFULLY!!");
     printf("\n\n\n\t\t\t\tWELCOME, HAVE A NICE DAY");
+    //reg();
     call();
     
   }
-  else if(checku==0&&checkp!=0)
-  {
+  else if(checku==0&&checkp!=0){
     printf("\n\n\n\t\t\tWRONG PASSWORD!! Not %s \n\n\t\t\tTry logging in again!\n",name);
     printf("\n Enter 1 to login again\n Enter 2 to exit!\n");
     scanf("%d",&button);
@@ -182,8 +167,7 @@ void login()
     getch();
     goto xy;
   }
-  else if(checku!=0)
-  {
+  else if(checku!=0){
     printf("\n\n\n\t\t\tYou are not a Registered User\n \t\t\tPress enter to register yourself");
     if(getch()==13)
       reg();
@@ -194,8 +178,7 @@ void display(){
   FILE *sal;
   char a;
   sal = fopen("salaryDetails.txt", "r");
-  while ((a = fgetc(sal)) != EOF)
-  { 
+  while ((a = fgetc(sal)) != EOF){ 
     printf ("%c", a);
   }
   fclose(sal);
@@ -205,8 +188,7 @@ void data(){
   FILE *fptr;
   char a;
   fptr = fopen("details.txt", "r");
-  while ((a = fgetc(fptr)) != EOF)
-  { 
+  while ((a = fgetc(fptr)) != EOF){ 
     printf ("%c", a);
   }
   fclose(fptr);
