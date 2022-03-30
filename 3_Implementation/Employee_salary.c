@@ -115,7 +115,6 @@ void login(){
   FILE *fp;
   char c,name[30],pass[30]; int z1=0;
   int checku,checkp;
-
   fp=fopen("Reg.txt", "r+");
   if(fp == NULL){
     printf("\t\t\tfile does not found !");
@@ -147,7 +146,6 @@ void login(){
     printf("\n\n\n\t\t\t\tWELCOME, HAVE A NICE DAY");
     //reg();
     call();
-    
   }
   else if(checku==0&&checkp!=0){
     printf("\n\n\n\t\t\tWRONG PASSWORD!! Not %s \n\n\t\t\tTry logging in again!\n",name);
