@@ -76,7 +76,7 @@ void reg()
 {
   FILE *fp;
   char c,checker[30];
-  static int z=0;
+  int z=0;
   if(fp == NULL){
     fp=fopen("Reg.txt", "w");
     goto a;
