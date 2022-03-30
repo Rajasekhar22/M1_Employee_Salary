@@ -129,7 +129,7 @@ void reg()
 void login()
 {
   FILE *fp;
-  char c,name[30],pass[30]; int z=0;
+  char c,name[30],pass[30]; z=0;
   int checku,checkp;
 
   fp=fopen("Reg.txt", "r+");
