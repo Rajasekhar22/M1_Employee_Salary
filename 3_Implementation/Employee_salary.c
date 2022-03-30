@@ -7,12 +7,10 @@
 #include "fun_call.h"
 
 static int i=0, n;
-
 struct detail
 {
 char name[30],pass[30];
 }w;
-
 
 int main(){
   printf(" ENTER '1' for login \n Enter '2' for Registering a new user\n");
