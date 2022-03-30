@@ -130,7 +130,6 @@ void login(){
       fscanf(fp,"%s %s",w.name,w.pass);
       if(strcmp(w.name, name) == 0){
         checku=0;
-        xy:
         printf("\n\n\t\t\t\t  ENTER PASSWORD: ");
         while((c=getch())!=13){
           pass[z1++]=c;
@@ -161,8 +160,6 @@ void login(){
         printf("\nEntered wrong option!, exitting!\n");
         exit(0);
     }
-    exit(0);
-    goto xy;
     getch();
   }
   else if(checku!=0){
