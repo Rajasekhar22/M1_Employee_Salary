@@ -162,8 +162,8 @@ void login(){
         exit(0);
     }
     exit(0);
-    getch();
     goto xy;
+    getch();
   }
   else if(checku!=0){
     printf("\n\n\n\t\t\tYou are not a Registered User\n \t\t\tPress enter to register yourself");
