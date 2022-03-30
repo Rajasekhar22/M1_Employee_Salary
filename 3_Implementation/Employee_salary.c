@@ -115,13 +115,7 @@ void reg()
     }
     fprintf(fp,"\t%s %s\n", w.name, w.pass);
     fclose(fp);
-    printf("\n\n\tPress enter if you agree with Username and Password");
-    if((c=getch())==13)
-    {
-      printf("\n\n\t\tYou are successfully registered");
-      login();
-    }
-   break;
+    break;
   }
   getch();
 }
