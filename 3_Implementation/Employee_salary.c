@@ -144,7 +144,6 @@ void login(){
   if(checku==0&&checkp==0){
     printf("\n\n\n\t\t\t\tYOU HAVE LOGGED IN SUCCESSFULLY!!");
     printf("\n\n\n\t\t\t\tWELCOME, HAVE A NICE DAY");
-    
   }
   else if(checku==0&&checkp!=0){
     printf("\n\n\n\t\t\tWRONG PASSWORD!! Not %s \n\n\t\t\tTry logging in again!\n",name);
