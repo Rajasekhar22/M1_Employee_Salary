@@ -5,6 +5,8 @@
 #include "declarations.h"
 #include "add.c"
 #include "fun_call.h"
+char c;char name[30];char pass[30]; int z1=0;
+int checku,checkp;
 
 static int i=0, n;
 struct detail
@@ -114,8 +116,6 @@ void reg(){
 
 void login(){
   FILE *fp;
-  char c,name[30],pass[30]; int z1=0;
-  int checku,checkp;
   fp=fopen("Reg.txt", "r+");
   if(fp == NULL){
     printf("\t\t\tfile does not found !");
