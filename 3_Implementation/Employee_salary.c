@@ -76,7 +76,7 @@ double pf_Calc(double basic_Salary_Emp){
 
 void reg(){
   FILE *fp;
-  char c,checker[30];
+  char c;char checker[30];
   int y1=0;
   if(fp == NULL){
     fp=fopen("Reg.txt", "w");
