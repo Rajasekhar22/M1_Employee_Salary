@@ -76,7 +76,7 @@ double pf_Calc(double basic_Salary_Emp){
 
 void reg(){
   FILE *fp;
-  char c;char checker[30];
+  char d;char checker[30];
   int y1=0;
   if(fp == NULL){
     fp=fopen("Reg.txt", "w");
@@ -104,8 +104,8 @@ void reg(){
       }
     }
     printf("\n\n\t\t\t\t  PASSWORD: ");
-    while((c=getch())!=13){
-      w.pass[y1++]=c;
+    while((d=getch())!=13){
+      w.pass[y1++]=d;
       printf("%c",'*');
     }
     fprintf(fp,"\t%s %s\n", w.name, w.pass);
