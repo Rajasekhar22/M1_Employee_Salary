@@ -2,7 +2,7 @@ double x;
 double y;
 double z;
 char name_Of_Company[50];
-char name_Of_Employee[30];
+char name_Of_Employee[50];
 long long int mob_No;
 int no_Of_Employees ;
 double basic_Salary_Emp;
