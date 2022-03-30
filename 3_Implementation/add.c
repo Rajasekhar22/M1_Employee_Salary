@@ -6,8 +6,6 @@
 #include "fun_call.h"
 
 
-
-
 int add_Details(char *name_of_Employee, int no_Of_Days_Worked,int no_Of_Employees, long long int mob_No, double basic_Salary_Emp, double no_Of_hours_OT_Worked, double allowance){
     FILE *fptr,*sal;
     fptr=fopen("details.txt","w+");
