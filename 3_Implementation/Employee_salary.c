@@ -117,7 +117,6 @@ void reg()
     fclose(fp);
     break;
   }
-  getch();
 }
 
 void login()
@@ -189,7 +188,6 @@ void login()
     if(getch()==13)
       reg();
   }
-  getch();
 }
 
 void display(){
