@@ -5,8 +5,9 @@
 #include "declarations.h"
 #include "add.c"
 #include "fun_call.h"
+#include "display.c"
 char c;char name[30];char pass[30]; int z1=0;
-int checku,checkp;
+int checku=1,checkp=1;
 
 static int i=0, n;
 struct detail
@@ -141,7 +142,7 @@ void login(){
         }
       }
   }
-  if(checku==0&&checkp==0){
+  if(checku ==0 &&checkp == 0){
     printf("\n\n\n\t\t\t\tYOU HAVE LOGGED IN SUCCESSFULLY!!");
     printf("\n\n\n\t\t\t\tWELCOME, HAVE A NICE DAY");
   }
@@ -162,13 +163,12 @@ void login(){
     getch();
   }
   else if(checku!=0){
-    printf("\n\n\n\t\t\tYou are not a Registered User\n \t\t\tPress enter to register yourself");
-    if(getch()==13)
-      reg();
+    printf("\n\n\n\t\t\tYou are not a Authorised User\n \t\t\tPress enter to register yourself");
+    exit(0);
   }
 }
 
-void display(){
+/*void display(){
   FILE *sal;
   char a;
   sal = fopen("salaryDetails.txt", "r");
@@ -186,4 +186,4 @@ void data(){
     printf ("%c", a);
   }
   fclose(fptr);
-}
+}*/

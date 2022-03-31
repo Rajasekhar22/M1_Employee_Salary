@@ -8,4 +8,6 @@
 	Raj 1111
 	lk qqqq
 	hi qqqq
+	shyamkumar 45
+	yohitha 123q
 	cd cd "c:\Users\RAJASEKHAR\Documents\GitHub\M1_EMPLOYEE_SALARY\3_Implementation\" ; if ($?) { gcc Employee_salary.c -o Employee_salary } ; if ($?) { .\Employee_salary }
