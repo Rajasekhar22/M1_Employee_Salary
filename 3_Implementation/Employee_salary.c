@@ -6,6 +6,7 @@
 #include "add.c"
 #include "fun_call.h"
 #include "display.c"
+
 char c;char name[30];char pass[30]; int z1=0;
 int checku=1,checkp=1;
 
@@ -167,23 +168,3 @@ void login(){
     exit(0);
   }
 }
-
-/*void display(){
-  FILE *sal;
-  char a;
-  sal = fopen("salaryDetails.txt", "r");
-  while ((a = fgetc(sal)) != EOF){ 
-    printf ("%c", a);
-  }
-  fclose(sal);
-}
-
-void data(){
-  FILE *fptr;
-  char a;
-  fptr = fopen("details.txt", "r");
-  while ((a = fgetc(fptr)) != EOF){ 
-    printf ("%c", a);
-  }
-  fclose(fptr);
-}*/

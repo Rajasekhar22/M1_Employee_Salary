@@ -1,3 +1,5 @@
 	NAME OF THE EMPLOYEE 	 MOBILE NUMBER 	 BASIC PAY 
-1 	 asdf 	 	 243 	 2.000000 	 
+1 	 hfgskh 	 	 78452865 	 2656.000000 	 
+ 
+2 	 jdkgfskhdg 	 	 9746534 	 6000.000000 	 
  
