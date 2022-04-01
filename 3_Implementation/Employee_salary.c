@@ -162,8 +162,6 @@ void login(){
     getchar();
     exit(0);
   }   
-
-  
 }
 /*int company(char noc){
   if(strcmp(noc,name_Of_Company) == 1){
