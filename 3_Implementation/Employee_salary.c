@@ -57,13 +57,13 @@ void call(){
   }
 }
 
-
+/*basic_Salary_Calc calculates the basic salary of the person, with respect the number of days that respective person worked*/
 double basic_Salary_Calc(int no_Of_Days_Worked,double basic_Salary_Emp){
   double a=basic_Salary_Emp/30;
   double b=(double)no_Of_Days_Worked*a;
   return b;
 }
-
+/*OT_Calc function calculates the OVERTIME that respective person worked for a month*/
 double OT_Calc(double no_Of_hours_OT_Worked, double basic_Salary_Emp){
   int no_Of_Hours_Per_Day =4;
   double no_Of_Days_Ot_Worked = no_Of_hours_OT_Worked/no_Of_Hours_Per_Day;
@@ -71,12 +71,12 @@ double OT_Calc(double no_Of_hours_OT_Worked, double basic_Salary_Emp){
   double b=no_Of_Days_Ot_Worked*a;
   return b;
 }
-
+/*pf_Calc function is implemented to calculate pf amount that should be deducted in the person salary*/
 double pf_Calc(double basic_Salary_Emp){
   double pf=0.12*basic_Salary_Emp;
   return pf;
 }
-
+/*This is to register a new user to add the details of the person*/
 void reg(){
   FILE *fp;
   char checker[30];
@@ -113,7 +113,7 @@ void reg(){
     break;
   }
 }
-
+/*This is to login the registered user.*/
 void login(){
   FILE *fp;
   fp=fopen("Reg.txt", "r+");
