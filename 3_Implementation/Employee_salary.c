@@ -33,7 +33,7 @@ int main(){
       printf("Wrong option entered!");
       exit(0);
   }
-  
+
   return 0;
 }
 void call(){
@@ -47,7 +47,7 @@ void call(){
       display();
       break;
     case 2:
-      data();      
+      data();
       break;
     case 3:
       exit(0);
@@ -161,13 +161,13 @@ void login(){
     printf("\n\n\n\t\t\tYou are not a Authorised User\n \t\t\tPress enter to register yourself\n");
     getchar();
     exit(0);
-  }   
+  }
 }
 /*int company(char noc){
   if(strcmp(noc,name_Of_Company) == 1){
     return 1;
   }
-  else  
+  else
     return 0;
 }
 int m_aut_user(char au){
