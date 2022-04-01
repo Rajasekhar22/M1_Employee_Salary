@@ -12,7 +12,7 @@ int add_Details(char *name_of_Employee, int no_Of_Days_Worked,int no_Of_Employee
     fprintf(fptr, "\tNAME OF THE EMPLOYEE \t MOBILE NUMBER \t BASIC PAY \n");
 
     for(int j=0;j<no_Of_Employees;j++){
-        printf("\n \n Add person details to the company records: (व्यक्ति विवरण जोड़ें)\nEnter name: ");
+        printf("\n \n Add person details to the company records: \nEnter name: ");
         scanf("%30s",name_of_Employee);
         printf("Enter Mob no. : ");
         scanf("%lld",&mob_No);

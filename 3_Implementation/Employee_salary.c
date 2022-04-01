@@ -17,7 +17,7 @@ char name[30],pass[30];
 }w;
 
 int main(){
-  printf(" ENTER '1' for login \n Enter '2' for Registering a new user\n");
+  printf(" Enter '1' for login \n Enter '2' for Registering a new user\n");
   scanf("%d",&opt);
   switch (opt){
     case 1:
@@ -79,7 +79,7 @@ double pf_Calc(double basic_Salary_Emp){
 
 void reg(){
   FILE *fp;
-  char d;char checker[30];
+  char checker[30];
   int y1=0;
   if(fp == NULL){
     fp=fopen("Reg.txt", "w");

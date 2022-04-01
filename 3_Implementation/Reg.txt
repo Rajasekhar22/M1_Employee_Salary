@@ -1,16 +1,3 @@
 	Rajasekhar 1234
 	Ganesh 7289
-	Rajasekhar 1234
-	Sam 0000
-	Sor 4444
-	Rk rk34
-	Raja 2222
-	Raj 1111
-	lk qqqq
-	hi qqqq
-	shyamkumar 45
-	yohitha 123q
-	cd cd "c:\Users\RAJASEKHAR\Documents\GitHub\M1_EMPLOYEE_SALARY\3_Implementation\" ; if ($?) { gcc Employee_salary.c -o Employee_salary } ; if ($?) { .\Employee_salary }
-	Rjk 3333
-	Raj 1234
-	goa 1234
+	suresh 1234
