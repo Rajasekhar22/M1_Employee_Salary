@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include<conio.h>
 #include "declarations.h"
-#include "add.c"
+extern int add_Details();
 #include "fun_call.h"
-#include "display.c"
+extern void display();
+
 
 char c;char name[30];char pass[30]; int z1=0;
 int checku=1,checkp=1;
@@ -57,6 +57,7 @@ void call(){
   }
 }
 
+
 double basic_Salary_Calc(int no_Of_Days_Worked,double basic_Salary_Emp){
   double a=basic_Salary_Emp/30;
   double b=(double)no_Of_Days_Worked*a;
@@ -106,10 +107,7 @@ void reg(){
       }
     }
     printf("\n\n\t\t\t\t  PASSWORD: ");
-    while((d=getch())!=13){
-      w.pass[y1++]=d;
-      printf("%c",'*');
-    }
+    scanf("%s", pass);
     fprintf(fp,"\t%s %s\n", w.name, w.pass);
     fclose(fp);
     break;
@@ -133,21 +131,18 @@ void login(){
       if(strcmp(w.name, name) == 0){
         checku=0;
         printf("\n\n\t\t\t\t  ENTER PASSWORD: ");
-        while((c=getch())!=13){
-          pass[z1++]=c;
-          printf("%c",'*');
-        }
-          pass[z1]='\0';
-          checkp=strcmp(w.pass,pass);
-          break;
-        }
+        scanf("%s", pass);
+        //pass[z1]='\0';
+        checkp=strcmp(w.pass, pass);
+        break;
       }
+    }
   }
-  if(checku ==0 &&checkp == 0){
+  if(checku ==0 && checkp == 0){
     printf("\n\n\n\t\t\t\tYOU HAVE LOGGED IN SUCCESSFULLY!!");
     printf("\n\n\n\t\t\t\tWELCOME, HAVE A NICE DAY");
   }
-  else if(checku==0&&checkp!=0){
+  else if(checku==0&&checkp != 0){
     printf("\n\n\n\t\t\tWRONG PASSWORD!! Not %s \n\n\t\t\tTry logging in again!\n",name);
     printf("\n Enter 1 to login again\n Enter 2 to exit!\n");
     scanf("%d",&button);
@@ -161,10 +156,38 @@ void login(){
         printf("\nEntered wrong option!, exitting!\n");
         exit(0);
     }
-    getch();
   }
   else if(checku!=0){
-    printf("\n\n\n\t\t\tYou are not a Authorised User\n \t\t\tPress enter to register yourself");
+    printf("\n\n\n\t\t\tYou are not a Authorised User\n \t\t\tPress enter to register yourself\n");
+    getchar();
     exit(0);
   }
 }
+/*int company(char noc){
+  if(strcmp(noc,name_Of_Company) == 1){
+    return 1;
+  }
+  else  
+    return 0;
+}
+int m_aut_user(char au){
+  if(strcmp(au,main_auth_User) == 1){
+    return 1;
+  }
+  else
+    return 0;
+}*/
+/*int check_username(){
+  FILE *fp;
+  fp=fopen("Reg.txt","r+");
+  scanf("%s", name);
+  while((c=fgetc(fp) != EOF){
+    fscanf("%s %s",w.name,w.pass);
+    if(strcmp(w.name,name) == 0){
+      checku=0;
+      scanf("%s %s",pass);
+      checkp =strcmp(w.pass,pass);
+      break;
+    }
+  }
+}*/

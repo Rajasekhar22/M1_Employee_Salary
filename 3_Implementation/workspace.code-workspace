@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\..\\Desktop"
+		},
+		{
+			"path": "..\\..\\..\\..\\Desktop\\siva_workspace"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"cmath": "c",
+			"compare": "c",
+			"concepts": "c",
+			"cstdarg": "c",
+			"cstdio": "c",
+			"cstdlib": "c",
+			"type_traits": "c",
+			"limits": "c",
+			"new": "c",
+			"*.tcc": "c",
+			"cstdint": "c",
+			"typeinfo": "c"
+		}
+	}
+}

@@ -1,7 +1,8 @@
 double x;
 double y;
 double z;
-//char name_Of_Company[50];
+//char name_Of_Company[30]="ABC AUTOMOBILES";
+//char main_auth_User[30]="Rajasekhar";
 char name_Of_Employee[30];
 long long int mob_No;
 int no_Of_Employees ;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void display(){
   FILE *sal;
   char a;
