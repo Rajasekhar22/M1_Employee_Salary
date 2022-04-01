@@ -1,3 +1,4 @@
+#include "unity.h"
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -5,7 +6,9 @@
 extern int add_Details();
 #include "fun_call.h"
 extern void display();
-
+extern int dummy();
+char name_Of_Company[30]="ABC-AUTOMOBILES";
+char main_auth_User[30]="Rajasekhar";
 
 char c;char name[30];char pass[30]; int z1=0;
 int checku=1,checkp=1;
@@ -17,7 +20,8 @@ char name[30],pass[30];
 }w;
 
 int main(){
-  printf(" Enter '1' for login \n Enter '2' for Registering a new user\n");
+  dummy();
+  printf(" Enter '1' for login \n Enter '2' for Registering a new user\n Enter '3' to exit. \n");
   scanf("%d",&opt);
   switch (opt){
     case 1:
@@ -29,6 +33,8 @@ int main(){
       reg();
       call();
       break;
+    case 3:
+      exit(0);
     default :
       printf("Wrong option entered!");
       exit(0);
@@ -163,31 +169,17 @@ void login(){
     exit(0);
   }
 }
-/*int company(char noc){
-  if(strcmp(noc,name_Of_Company) == 1){
+int company(char noc[]){
+  if(strcmp(noc,name_Of_Company) == 0){
     return 1;
   }
   else
     return 0;
 }
-int m_aut_user(char au){
-  if(strcmp(au,main_auth_User) == 1){
+int m_aut_user(char au[]){
+  if(strcmp(au, main_auth_User) == 0){
     return 1;
   }
   else
     return 0;
-}*/
-/*int check_username(){
-  FILE *fp;
-  fp=fopen("Reg.txt","r+");
-  scanf("%s", name);
-  while((c=fgetc(fp) != EOF){
-    fscanf("%s %s",w.name,w.pass);
-    if(strcmp(w.name,name) == 0){
-      checku=0;
-      scanf("%s %s",pass);
-      checkp =strcmp(w.pass,pass);
-      break;
-    }
-  }
-}*/
+}

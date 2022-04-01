@@ -8,3 +8,5 @@ void reg();
 void display();
 void data();
 void call();
+int company(char noc[]);
+int m_aut_user(char au[]);
