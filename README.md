@@ -56,6 +56,8 @@
 [![AGPL License](https://img.shields.io/badge/CODIGA_GRADE-A-blue.svg)](https://api.codiga.io/project/32219/status/svg)
 
 *   BUILD on LINUX [![Build on LINUX](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/c-cpp.yml)
+*   CPPCHECK [![Analysis](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/analsis.yml/badge.svg)](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/analsis.yml)
+
 ## 🔗 Links
 [![my_portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Rajasekhar22)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/bammidi-rajasekhar-2a58651b6)
