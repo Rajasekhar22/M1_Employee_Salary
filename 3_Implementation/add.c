@@ -6,11 +6,11 @@
 
 
 int add_Details(char *name_of_Employee, int no_Of_Days_Worked,int no_Of_Employees, long long int mob_No, double basic_Salary_Emp, double no_Of_hours_OT_Worked, double allowance){
-    FILE *fptr,*sal;
-    fptr=fopen("details.txt","w+");
+    FILE *fptr,*sal;// File pointer is been declared.
+    fptr=fopen("details.txt","w+");// I this fopen is used to open a file.
     sal=fopen("salaryDetails.txt","w+");
-    fprintf(fptr, "\tNAME OF THE EMPLOYEE \t MOBILE NUMBER \t BASIC PAY \n");
-
+    fprintf(fptr, "\tNAME OF THE EMPLOYEE \t MOBILE NUMBER \t BASIC PAY \n");//Printed to a file using fprintf function
+    // In the for loop each and every details which are required are taken from the user and calculated using function and printed in the files as given
     for(int j=0;j<no_Of_Employees;j++){
         printf("\n \n Add person details to the company records: \nEnter name: ");
         scanf("%30s",name_of_Employee);

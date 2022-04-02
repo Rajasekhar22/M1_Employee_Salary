@@ -10,13 +10,13 @@ extern int dummy();
 char name_Of_Company[30]="ABC-AUTOMOBILES";
 char main_auth_User[30]="Rajasekhar";
 
-char c;char name[30];char pass[30]; int z1=0;
+char c;char name[31];char pass[31]; int z1=0;
 int checku=1,checkp=1;
 
 static int i=0, n;
 struct detail
 {
-char name[30],pass[30];
+char name[31],pass[31];
 }w;
 
 int main(){
@@ -63,13 +63,13 @@ void call(){
   }
 }
 
-/*basic_Salary_Calc calculates the basic salary of the person, with respect the number of days that respective person worked*/
+//basic_Salary_Calc calculates the basic salary of the person, with respect the number of days that respective person worked
 double basic_Salary_Calc(int no_Of_Days_Worked,double basic_Salary_Emp){
   double a=basic_Salary_Emp/30;
   double b=(double)no_Of_Days_Worked*a;
   return b;
 }
-/*OT_Calc function calculates the OVERTIME that respective person worked for a month*/
+//OT_Calc function calculates the OVERTIME that respective person worked for a month
 double OT_Calc(double no_Of_hours_OT_Worked, double basic_Salary_Emp){
   int no_Of_Hours_Per_Day =4;
   double no_Of_Days_Ot_Worked = no_Of_hours_OT_Worked/no_Of_Hours_Per_Day;
@@ -77,15 +77,15 @@ double OT_Calc(double no_Of_hours_OT_Worked, double basic_Salary_Emp){
   double b=no_Of_Days_Ot_Worked*a;
   return b;
 }
-/*pf_Calc function is implemented to calculate pf amount that should be deducted in the person salary*/
+//pf_Calc function is implemented to calculate pf amount that should be deducted in the person salary
 double pf_Calc(double basic_Salary_Emp){
   double pf=0.12*basic_Salary_Emp;
   return pf;
 }
-/*This is to register a new user to add the details of the person*/
+//This is to register a new user to add the details of the person
 void reg(){
   FILE *fp;
-  char checker[30];
+  char checker[33];
   int y1=0;
   if(fp == NULL){
     fp=fopen("Reg.txt", "w");
@@ -101,7 +101,7 @@ void reg(){
   printf("\n\t\t\t\t-----------------------------");
   for(i=0;i<100;i++){
     printf("\n\n\t\t\t\t  ENTER USERNAME: ");
-    scanf("%s",checker);
+    scanf("%32s",checker);
     while(!feof(fp)){
       if(strcmp(checker,w.name)==0){
         printf("\n\n\t\t\tYOU'RE ALREADY A USER");
@@ -113,13 +113,13 @@ void reg(){
       }
     }
     printf("\n\n\t\t\t\t  PASSWORD: ");
-    scanf("%s", pass);
+    scanf("%30s", pass);
     fprintf(fp,"\t%s %s\n", w.name, w.pass);
     fclose(fp);
     break;
   }
 }
-/*This is to login the registered user.*/
+//This is to login the registered user.
 void login(){
   FILE *fp;
   fp=fopen("Reg.txt", "r+");
@@ -133,12 +133,11 @@ void login(){
     printf("\n\n\t\t\t\t  ENTER USERNAME: ");
     scanf("%s",name);
     while( (c = fgetc(fp)) != EOF){
-      fscanf(fp,"%s %s",w.name,w.pass);
+      fscanf(fp,"%30s %30s",w.name,w.pass);
       if(strcmp(w.name, name) == 0){
         checku=0;
         printf("\n\n\t\t\t\t  ENTER PASSWORD: ");
-        scanf("%s", pass);
-        //pass[z1]='\0';
+        scanf("%30s", pass);
         checkp=strcmp(w.pass, pass);
         break;
       }
@@ -169,6 +168,7 @@ void login(){
     exit(0);
   }
 }
+//This function is to check the company name
 int company(char noc[]){
   if(strcmp(noc,name_Of_Company) == 0){
     return 1;
@@ -176,6 +176,7 @@ int company(char noc[]){
   else
     return 0;
 }
+//This function is to check the company name
 int m_aut_user(char au[]){
   if(strcmp(au, main_auth_User) == 0){
     return 1;

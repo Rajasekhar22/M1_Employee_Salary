@@ -5,6 +5,7 @@ void setUp(void){
 }
 void tearDown(void){
 }
+//This file is for Unit testing purpose
 
 void test();
 void test1();
