@@ -1,13 +1,12 @@
-#include "unity.h"
+//#include "unity.h"
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 #include "declarations.h"
-extern int add_Details();
 #include "fun_call.h"
-extern void display();
-extern int dummy();
-void view_Salary();
+#include "add.c"
+#include "display.c"
+
 char name_Of_Company[30]="ABC-AUTOMOBILES";
 char main_auth_User[30]="Rajasekhar";
 
@@ -21,7 +20,7 @@ char name[31],pass[31];
 }w;
 
 int main(){
-  dummy();
+  //dummy();
   printf(" Enter '1' for login \n Enter '2' for Registering a new user\n Enter '3' to see the details. \n Enter '4' to exit. \n");
   scanf("%d",&opt);
   switch (opt){
@@ -172,25 +171,9 @@ void login(){
     exit(0);
   }
 }
-//This function is to check the company name
-int company(char noc[]){
-  if(strcmp(noc,name_Of_Company) == 0){
-    return 1;
-  }
-  else
-    return 0;
-}
-//This function is to check the company name
-int m_aut_user(char au[]){
-  if(strcmp(au, main_auth_User) == 0){
-    return 1;
-  }
-  else
-    return 0;
-}
+
 void view_Salary(){
   FILE *det;
-  printf("poda fool/n");
   char a;
   det=fopen("salaryDetails.txt","r");
   while ((a = fgetc(det)) != EOF){ 
