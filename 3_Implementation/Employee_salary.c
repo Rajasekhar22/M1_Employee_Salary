@@ -131,7 +131,7 @@ void login(){
     printf("\n\n\t\t\t\t   LOG IN ZONE");
     printf("\n\t\t\t\t^^^^^^^^^^^^^^^^^^^^^^");
     printf("\n\n\t\t\t\t  ENTER USERNAME: ");
-    scanf("%s",name);
+    scanf("%30s",name);
     while( (c = fgetc(fp)) != EOF){
       fscanf(fp,"%30s %30s",w.name,w.pass);
       if(strcmp(w.name, name) == 0){
