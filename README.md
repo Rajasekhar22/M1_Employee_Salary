@@ -44,12 +44,18 @@
 * To go with best compiler use VISUAL STUDIO CODE.
 * In Visual Studio code you can also RUN the program in both LINUX and WINDOWS.
 
+## Badges 
+* Codacy - Static Code Analysis
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b258b90529834e13be4eaa38b5c96d60)](https://app.codacy.com/gh/Rajasekhar22/M1_Employee_Salary)
 
+* Codiga - Static Analysis
+![Quality](https://api.codiga.io/project/32219/score/svg)
+
+* Codiga - Static Code Analysis
+[![AGPL License](https://img.shields.io/badge/CODIGA_GRADE-A-blue.svg)](https://api.codiga.io/project/32219/status/svg)
 ## 🔗 Links
 [![my_portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Rajasekhar22)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/bammidi-rajasekhar-2a58651b6)
-
-
 
 ## Support
 
