@@ -7,6 +7,7 @@ extern int add_Details();
 #include "fun_call.h"
 extern void display();
 extern int dummy();
+void view_Salary();
 char name_Of_Company[30]="ABC-AUTOMOBILES";
 char main_auth_User[30]="Rajasekhar";
 
@@ -21,7 +22,7 @@ char name[31],pass[31];
 
 int main(){
   dummy();
-  printf(" Enter '1' for login \n Enter '2' for Registering a new user\n Enter '3' to exit. \n");
+  printf(" Enter '1' for login \n Enter '2' for Registering a new user\n Enter '3' to see the details. \n Enter '4' to exit. \n");
   scanf("%d",&opt);
   switch (opt){
     case 1:
@@ -33,8 +34,11 @@ int main(){
       reg();
       call();
       break;
-    case 3:
+    case 4:
       exit(0);
+    case 3:
+      view_Salary();
+      break;
     default :
       printf("Wrong option entered!");
       exit(0);
@@ -183,4 +187,14 @@ int m_aut_user(char au[]){
   }
   else
     return 0;
+}
+void view_Salary(){
+  FILE *det;
+  printf("poda fool/n");
+  char a;
+  det=fopen("salaryDetails.txt","r");
+  while ((a = fgetc(det)) != EOF){ 
+    printf ("%c", a);
+  }
+  fclose(det);
 }
