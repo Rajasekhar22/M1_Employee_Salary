@@ -14,10 +14,8 @@
   * Surfed internet for FILE operations and Latest header files used at present in c.
 ##  Key feautures
   * Register and Login functions
-  
-
-
-
+ 
+    ![Reg Login](https://images.unsplash.com/photo-1648964962689-30f4ea953096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60)
 
 * Register function:
   * Register function is used to register a new user as a employer to add the details of the employee.
@@ -26,11 +24,18 @@
 * Login function:
   * Login function is used to login and add details of the person.
 
+# The 4W's and a H 
 
-  
-* Funtions required for FILE read/write operations
-
-
+## WHAT
+  * It is a simple Employee Salary Calculation for calculating Salary.
+## WHY
+  * The main objective of this project is to calculate the salary of the employee through software.
+## WHO
+  * Employees who require the calculation of the salary of their employees and display the salary details.
+## WHERE
+  * This project mainly comes in use at Industries, Educational Organizations.(Where there is a need of workers/labour).
+## HOW
+  * This project is implemented using "c program" and uses traditional file systems. This project also make use of the structure where user defined variables are present.
 
 # SWOT ANALYSIS OF THE PROJECT
  ## STRENGTHS:
@@ -41,12 +46,8 @@
    * No Database only Traditional File System
    * Timescale and Deadline
    * Process and System
-   * Post training required
-## OPPORTUNITIES:
-   * Skill Development
-   * Quick Solution for the problem
-   * Standardized process
 ## THREATS:
-   * Competitve work
    * Security concerns
    * Hardware issue
+
+#
