@@ -50,7 +50,8 @@ void call(){
   printf("\n\n\n\t-----Add details of the Employees -----\t\n\nEnter number of employees :\n");
   scanf("%d", &no_Of_Employees);
   add_Details( name_Of_Employee, no_Of_Days_Worked, no_Of_Employees, mob_No, basic_Salary_Emp, no_Of_hours_OT_Worked, allowance);
-  printf("\nEnter 1 to display Employee salary\n\nEnter 2 to display Employee details\n\nEnter 3 to exit!\n");
+  printf("\n\nTo print to the screen: ");
+  printf("\n\nEnter 1 to display Employee salary\n\nEnter 2 to display Employee details\n\nEnter 3 to exit!\n");
   scanf("%d",&option);
   switch (option){
     case 1:

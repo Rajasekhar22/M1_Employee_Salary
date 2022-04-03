@@ -29,7 +29,7 @@ int add_Details(char *name_of_Employee, int no_Of_Days_Worked,int no_Of_Employee
         y=OT_Calc(  no_Of_hours_OT_Worked,  basic_Salary_Emp);
         z=pf_Calc( basic_Salary_Emp);
         if(j==0){
-            fprintf(sal,"SNO.\tEMPLOYEE NAME\tPRESENT\tOT\tBASIC PAY\tOT PAY\tPF DEDUCTED\tTOTAL SALARY\n");
+            fprintf(sal,"SNO.\tNAME\tPRESENT\tOT\tBASIC PAY\tOT PAY\tPF DEDUCTED\tTOTAL SALARY\n");
         }
         fprintf(sal,"%d\t%s\t%d\t%0.1lf\t%.2lf\t%.2lf\t%.1lf\t%0.2lf\n", j+1,name_of_Employee,no_Of_Days_Worked, no_Of_hours_OT_Worked,x, y, z,x+y+allowance-z);
     }
