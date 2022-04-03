@@ -50,4 +50,23 @@
    * Security concerns
    * Hardware issue
 
-#
+# Detail Requirements
+
+## High Level Requirements:
+
+|  ID   | Description | Status (Implemented/In Future) |
+| ----- | ----------- | ------------------------------ |
+| HLR 1 |    Login and Password Authentication system.   |  Implemented  |
+| HLR 2 |    Adding details.   | Implemented |
+| HLR 3 |    Details File print.   | Implemented |
+| HLR 4 |    Salary File Print.  | Implemented |
+| HLR 5 |    View histories.   | Implemented |
+| HLR 6 |    Print details if required.   | Implemented |
+| HLR 7 |    Web access.   | In Future |
+
+## Low Level Requirements:
+
+|  ID   | Description | Status (Implemented/ In Future) |
+| ----- | ----------- | ------------------------------- |
+| LLR 1 |    Salary Information  |  Implemented  |
+| LLR 2 |    Reset File. | In Future |
