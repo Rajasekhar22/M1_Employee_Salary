@@ -1,0 +1,19 @@
+name: Windows C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: build
+      run: gcc Employee_salary.c -o Employee_salary.exe
+    - name: Run
+      run: .\Employee_salary.exe
