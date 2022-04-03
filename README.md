@@ -53,7 +53,7 @@
 ![Quality](https://api.codiga.io/project/32219/score/svg)
 
 * Codiga - Static Code Analysis
-[![AGPL License](https://img.shields.io/badge/CODIGA_GRADE-A-blue.svg)](https://api.codiga.io/project/32219/status/svg)
+[![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-blue.svg)](https://api.codiga.io/project/32219/status/svg)
 
 *   BUILD on LINUX [![Build on LINUX](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/c-cpp.yml)
 *   CPPCHECK [![Analysis](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/analsis.yml/badge.svg)](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/analsis.yml)
