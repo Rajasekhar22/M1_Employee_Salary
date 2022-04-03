@@ -21,7 +21,8 @@ char name[31],pass[31];
 
 int main(){
   //dummy();
-  printf(" Enter '1' for login \n Enter '2' for Registering a new user\n Enter '3' to see the details. \n Enter '4' to exit. \n");
+  printf("\n\n\tEmployer Login: \n\t---------------\n\n");
+  printf("\tEnter '1' for login \n\tEnter '2' for Registering a new user\n\tEnter '3' to see the details. \n\tEnter '4' to exit. \n");
   scanf("%d",&opt);
   switch (opt){
     case 1:
