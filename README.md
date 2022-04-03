@@ -44,6 +44,7 @@
 * Set path for MINGGW in Environment variables.
 * To go with best compiler use VISUAL STUDIO CODE.
 * In Visual Studio code you can also RUN the program in both LINUX and WINDOWS.
+* Unit testing is done for Linux.
 
 ## Badges 
 * Codacy - Static Code Analysis
@@ -56,6 +57,7 @@
 [![codiga](https://img.shields.io/badge/CODIGA_GRADE-A-blue.svg)](https://api.codiga.io/project/32219/status/svg)
 
 *   BUILD on LINUX [![Build on LINUX](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/c-cpp.yml)
+
 *   CPPCHECK [![Analysis](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/analsis.yml/badge.svg)](https://github.com/Rajasekhar22/M1_Employee_Salary/actions/workflows/analsis.yml)
 
 ## 🔗 Links
