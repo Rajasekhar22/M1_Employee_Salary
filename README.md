@@ -39,6 +39,8 @@
 *   Each registered user's password is saved in a FILE in.txt format in this function.
 
 ## For Testing and using code
+*  Username - Rajasekhar
+*  password - 1234
 
 * You have to use C compiler with MINGGW(latest or the previous versions).
 * Set path for MINGGW in Environment variables.
