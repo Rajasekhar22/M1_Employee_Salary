@@ -10,7 +10,7 @@
   * Met with some Accountants in 3 companies for calculations used for salaries.
   ![Functions](https://javacontrols.com/wp-content/uploads/2021/04/headerfile-1024x683.jpg)
   
-      ![File-functions for ltts project](https://user-images.githubusercontent.com/86227942/160670091-bc3a2979-38a2-4008-b6fa-9df582dac766.jpg)
+      ![File-functions for project](https://user-images.githubusercontent.com/86227942/160670091-bc3a2979-38a2-4008-b6fa-9df582dac766.jpg)
   * Surfed internet for FILE operations and Latest header files used at present in c.
 ##  Key feautures
   * Register and Login functions
